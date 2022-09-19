@@ -1,7 +1,8 @@
 function showhide() {
-    console.log(document.querySelector(".menu"))
-    menu = document.querySelector(".menu")
-    if (menu.style.display == 'none') {
-        console.log("aaaa")
+    console.log(document.querySelector(".menu").style.display)
+    if (document.querySelector(".menu").style.display == 'block') {
+        document.querySelector(".menu").style.display = 'none'
+    } else{
+        document.querySelector(".menu").style.display = 'block'
     }
 }

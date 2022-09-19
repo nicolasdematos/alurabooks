@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root{
     --background: #EBECEE;
     --branco-principal: #ffffff;
@@ -12,6 +13,7 @@
 }
 body{
     background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
 }
 header{
     background-color: var(--branco-principal);
@@ -42,9 +44,155 @@ header{
     padding: 20px;
 }
 .menu_fechado{
-    background-color: red;
     display: none;
 }
-.menu_aberto{
-    background-color: red;
+.banner{
+    height: 215px;
+    background-image: linear-gradient(to right, #002F52, #326589);
+    color: var(--branco-principal);
+    text-align: center;
+}
+.banner_title{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 2em 0 1.5em 0;
+}
+.banner_text{
+    margin: auto;
+    width: 80%;
+    font-size: 16px;
+    padding-bottom: 2em;
+}
+.banner_button{
+    background: url(img/Pesquisa.svg);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 40px;
+    font-size: 1.2em;
+    text-align: center;
+    border: 1px solid var(--branco-principal);
+    background-position: center left;
+    border-radius: 20px;
+    color: var(--branco-principal);
+}
+.carrossel_title{
+    text-align: center;
+    color: var(--laranja);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1.5em 0 1em 0;
+    background-color: var(--branco-principal);
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em;
+}
+.card{
+    background-color: var(--branco-principal);
+    padding: 10px;
+    margin: 10px 15px 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.card_foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_text *{
+    padding: 0 5px 10px 0;
+}
+.card_subtitle{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--laranja);
+    line-height:  24px;
+}
+.card_title{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--azul-escuro);
+    line-height:  27px;
+}
+.card_sinopse{
+    font-size: 14px;
+    font-weight: 400;
+    line-height:  21px;
+}
+.card_main_button{
+    background-color: var(--laranja);
+    padding: 1em 1.75em;
+    color: var(--branco-principal);
+    font-weight: 700;
+}
+.card_image{
+    width: 45%;
+}
+.recent{
+    background-color: var(--branco-principal);
+    padding-top: 20px;
+}
+.recent_content{
+    background-image: linear-gradient(to right, #002F52, #326589);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.recent_title{
+    padding: 20px;
+    color: var(--branco-principal);
+}
+.recent_list{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recent_item{
+    padding: 20px;
+    background-color: var(--laranja);
+    color: var(--branco-principal);
+    margin: 5px;
+}
+.contact{
+    background-color: var(--branco-principal);
+    padding: 20px;
+}
+.contact_title{
+    color: #002F52;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.contact_text{
+    color: #326589;
+    margin-bottom: 20px;
+}
+.contact_input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--azul-escuro);
+    color: var(--azul-escuro);
+    border-radius: 20px;
+    text-align: center;
+    background-image: url(img/Email.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    margin-bottom: 20px;
+}
+footer{
+    padding: 30px;
+    border-top: 1px solid black;
+    background-color: var(--branco-principal);
 }
